@@ -1,0 +1,13 @@
+{
+  "name": "ostimautoalign",
+  "version-semver": "1.2.0",
+  "dependencies": [
+    "directxmath",
+    "directxtk",
+    "fmt",
+    "nlohmann-json",
+    "rapidcsv",
+    "spdlog",
+    "xbyak"
+  ]
+}

@@ -1,0 +1,17 @@
+* text=auto
+*.ps1 text eol=crlf
+
+# Game and binary files
+*.dll binary
+*.pdb binary
+*.esp binary
+*.esl binary
+*.esm binary
+*.pex binary
+*.hkx binary
+*.nif binary
+*.bsa binary
+*.dds binary
+*.tga binary
+*.png binary
+*.zip binary

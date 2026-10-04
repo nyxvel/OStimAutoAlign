@@ -1,0 +1,34 @@
+{
+	// OStim Auto Align settings. Comments are allowed. Log: My Games\Skyrim Special Edition\SKSE\OStimAutoAlign.log
+	"enabled": true,
+	"npcThreads": true,              // also align scenes the player isn't in
+	"settleSeconds": 1.2,            // wait after a scene change before measuring
+	"minSampleSeconds": 2.0,         // measure one animation loop, at least / at most this long
+	"maxSampleSeconds": 4.0,
+	"adjustBend": true,              // change the schlong bend (SOSBend) when it fits better
+	"adjustScale": true,             // grow/shrink the moved actor a little instead of lifting them off the ground
+	"scaleMin": 0.9,
+	"scaleMax": 1.1,
+	"maxOffset": 15.0,               // never move an actor farther than this (game units)
+	"minImprovement": 1.0,           // change nothing unless it gets at least this much better
+	"verify": true,                  // measure again afterwards, undo if it isn't better
+	"respectManualAlignment": true,  // leave scenes alone that you aligned by hand in OStim's align menu
+
+	// Costs, in game units of misalignment: per unit of lifting an actor (floating a little is fine),
+	// per unit of lowering one into the floor, per % of scale, per unit of sliding along the ground,
+	// per bend step away from the scene's own bend. Moving the actors is preferred; the bend changes
+	// only when that makes the shaft point the right way. Big changes cost more than small ones.
+	"costHeight": 0.5,
+	"costSink": 1.0,
+	"costScalePercent": 0.4,
+	"costSlide": 0.15,
+	"costBendStep": 1.0,
+	// The shaft should point along the vaginal/anal canal, straight into the mouth, through the fist:
+	// each degree off by more than angleDeadzone costs 1/anglePerUnit.
+	"angleDeadzone": 20.0,
+	"anglePerUnit": 15.0,
+	"secondaryWeight": 0.3,          // weight of the scene's other actions (kissing during sex, ...)
+	"engagedDistance": 6.0,          // a hand/mouth farther than this from its target is busy elsewhere
+
+	"logLevel": "info"               // "debug" also logs scenes it skips
+}
